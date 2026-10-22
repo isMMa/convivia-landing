@@ -20,7 +20,7 @@ CNAME                 → dominio personalizado (convivia.devodelight.com)
    - El archivo `CNAME` ya incluido en este proyecto configura automáticamente el dominio personalizado en GitHub Pages; no lo borres.
 4. Espera a que el certificado HTTPS se emita (unos minutos) y activa "Enforce HTTPS" en Settings → Pages.
 
-## Antes de publicar — pendientes recomendados
+## Antes de publicar: pendientes recomendados
 - **Imagen Open Graph**: las etiquetas `og:image`/`twitter:image` apuntan a `assets/og-image.png`, que aún no existe. Genera una imagen de 1200×630px (puedes usar una captura real de la app) y guárdala en `assets/og-image.png`.
 - **Favicon**: se usa un icono SVG generado en línea (la "C" verde). Si quieres un icono más elaborado, sustitúyelo por un archivo real y añade el `<link rel="icon">` correspondiente.
 - **Enlace a App Store**: no encontré una versión de Convivia en iOS. En cuanto exista, añade el enlace en el hero y en el footer de ambos idiomas.
