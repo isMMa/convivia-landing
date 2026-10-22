@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://convivia.devodelight.com/sitemap.xml
+Sitemap: https://convivia.devcodelight.com/sitemap.xml

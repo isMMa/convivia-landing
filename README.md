@@ -6,11 +6,13 @@ Landing estática (sin build, sin frameworks) optimizada para SEO, lista para Gi
 ```
 index.html          → versión en español (idioma por defecto)
 en/index.html        → versión en inglés
+privacidad.html      → política de privacidad en español
+en/privacidad.html   → política de privacidad en inglés
 assets/style.css      → estilos
 assets/main.js         → menú móvil
 sitemap.xml            → mapa del sitio (ES + EN con hreflang)
 robots.txt             → permite indexación, apunta al sitemap
-CNAME                 → dominio personalizado (convivia.devodelight.com)
+CNAME                 → dominio personalizado (convivia.devcodelight.com)
 ```
 
 ## Desplegar en GitHub Pages
@@ -29,8 +31,8 @@ CNAME                 → dominio personalizado (convivia.devodelight.com)
 ## Por qué esta landing está optimizada para SEO
 - HTML semántico (un único `<h1>`, jerarquía de encabezados correcta, `<details>/<summary>` nativos para el FAQ sin JavaScript).
 - `title` y `meta description` únicos por idioma, ambos con las palabras clave reales del producto (alquiler de habitaciones, pisos compartidos).
-- `hreflang` cruzado ES/EN + `x-default`, y páginas 100% estáticas por idioma (nada de contenido inyectado por JS, que Google indexa peor).
+- `hreflang` cruzado ES/EN + `x-default`, y páginas 100% estáticas por idioma (el único contenido inyectado por JS es el email ofuscado de la política, para reducir spam).
 - Datos estructurados JSON-LD: `MobileApplication` y `FAQPage` (esto último puede generar rich snippets de preguntas frecuentes en Google).
 - `sitemap.xml` con anotaciones `hreflang` y `robots.txt` apuntando a él.
-- Cero frameworks, cero peticiones innecesarias: cero JavaScript salvo un menú móvil de 15 líneas, iconografía en SVG inline (sin imágenes que descargar), una sola fuente externa (Google Fonts) con `preconnect`. Esto favorece Core Web Vitals (LCP/CLS), que es señal de ranking.
+- Cero frameworks, cero peticiones innecesarias: JavaScript mínimo (menú móvil e inyección del email ofuscado de la política), iconografía en SVG inline (sin imágenes que descargar), una sola fuente externa (Google Fonts) con `preconnect`. Esto favorece Core Web Vitals (LCP/CLS), que es señal de ranking.
 - `rel="noopener"` en enlaces externos, contraste de color accesible y foco visible (accesibilidad también pesa indirectamente en SEO vía experiencia de usuario).
